@@ -14,7 +14,7 @@ body {
     font-family: cursive;
 }
 
-@keyframes clock-animation {
+/* @keyframes clock-animation {
     0% {
         background: #5B84B1FF;
     }
@@ -31,7 +31,7 @@ body {
         background: #ADEFD1FF;
 
     }
-}
+} */
 
 .clock-container {
     width: 350px;
