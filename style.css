@@ -3,15 +3,16 @@ body {
     animation-iteration-count: infinite;
     animation-delay: 3s ease-in-out;
     animation-duration: 10s; */
-    background : rgb(116, 126, 29);
+    background: rgb(116, 126, 29);
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
     overflow-x: hidden;
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-weight: 900; */
 }
 
 /* @keyframes clock-animation {
@@ -19,7 +20,7 @@ body {
         background: #5B84B1FF;
     }
     25% {
-        bacground: #FC766AFF;
+        background: #FC766AFF;
     }
     50% {
         background: #000;
@@ -34,20 +35,21 @@ body {
 } */
 
 .clock-container {
-    width: 350px;
-    height: 350px;
+    width: 550px;
+    height: 550px;
     border: 10px solid #bfd30ea1;
     border-radius: 50%;
     position: relative;
     background: rgb(231, 204, 204);
 }
 
+
 .clock-container::after {
     content: "";
     position: absolute;
     width: 15px;
     height: 15px;
-    background: purple;
+    background: rgb(236, 5, 17);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -86,9 +88,9 @@ body {
     transform: rotate(60deg);
 }
 
-.num2>div {
+/* .num2>div {
     transform: rotate(-60deg);
-}
+} */
 
 .num3 {
     transform: rotate(90deg);
@@ -188,6 +190,7 @@ body {
     height: 32%;
     width: 3px;
     background: rgb(236, 5, 17);
+    z-index: 12;
 }
 
 .minute-hand {
@@ -208,8 +211,8 @@ body {
     border-style: solid;
     border-color: transparent transparent rgb(240, 43, 8) transparent;
     left: 50%;
-    transform: translateX(-50%);
-    top: -6%;
+    transform: translateX(-45%);
+    top: -2%;
 }
 
 .current-day {
